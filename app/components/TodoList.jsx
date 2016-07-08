@@ -20,4 +20,4 @@ var TodoList = React.createClass({
   }
 });
 
-module.exports = TodoList
+module.exports = TodoList;
