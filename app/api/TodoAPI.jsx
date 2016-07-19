@@ -1,7 +1,7 @@
 var $ = require('jquery');
 
 module.exports = {
-  setTodos: function(todos) {
+  setTodos: function (todos) {
     if ($.isArray(todos)) {
       localStorage.setItem('todos', JSON.stringify(todos));
       return todos;
@@ -30,7 +30,6 @@ module.exports = {
     // Filter by searchText
     filteredTodos = filteredTodos.filter((todo) => {
       var text = todo.text.toLowerCase();
-
       return searchText.length === 0 || text.indexOf(searchText) > -1;
     });
 
@@ -43,14 +42,8 @@ module.exports = {
       } else {
         return 0;
       }
-    })
+    });
 
     return filteredTodos;
   }
 };
-
-
-
-
-
-
