@@ -56,10 +56,11 @@ describe('Reducers', () => {
       expect(res[0].completed).toEqual(false);
       expect(res[0].completedAt).toEqual(undefined);
     });
-    it('Should add existing todos', () => {
+
+    it('should add existing todos', () => {
       var todos = [{
         id: '111',
-        text: 'whatever',
+        text: 'anything',
         completed: false,
         completedAt: undefined,
         createdAt: 33000
